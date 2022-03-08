@@ -68,7 +68,7 @@ const BorderStyle = {
 	dashed:'dashed',
 	solid:'solid',
 	souble:'double',
-	groove:groove,
+	groove:'groove',
 	ridge:'ridge',
 	inset:'inset',
 	outset:'outset'
@@ -175,6 +175,7 @@ const BorderStyle = {
 	 * @natura entity
 	 */
  /**
+	* @natura entity
 	* @typedef {String} Color 
 	*/
 /**
@@ -191,6 +192,7 @@ const BorderStyle = {
 	* Define a color in terms of its red, gree, blue, transparency components
 	* @natura expression <<r>> <<g>> <<b>> <<a>>
 	* @title custom rgba color
+	* @isa color
 	* @role artifact
 	* @param {Number} r red - a number between 0 and 255(placeholder:red)
 	* @param {Number} g green - a number between 0 and 255(placeholder:green)
@@ -225,12 +227,16 @@ const BorderStyle = {
 
   /**
 	* Define a custom CSS property that does not appear in the style property options
-	* @typedef {HtmlStyle} CustomCssProperty
-	* @natura entity <<key>>: <<value>>
+	* @natura expression <<key>>: <<value>>
+	* @role artifact
 	* @title custom css property
-	* @prop {Text} key The property name (title:property name)
-	* @prop {Text} value The property value (title:property value)
+	* @param {Text} key The property name (title:property name)
+	* @param {Text} value The property value (title:property value)
+	* @returns {HtmlStyle}
 	*/
+export function CustomCssProperty(key,value){
+	return {key,value}
+}
 
  /**
 	* @enum {String}
