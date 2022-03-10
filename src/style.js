@@ -190,7 +190,7 @@ const BorderStyle = {
 
 /**
 	* Define a color in terms of its red, gree, blue, transparency components
-	* @natura expression <<r>> <<g>> <<b>> <<a>>
+	* @natura1 expression <<r>> <<g>> <<b>> <<a>>
 	* @title custom rgba color
 	* @isa color
 	* @role artifact
