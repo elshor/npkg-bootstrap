@@ -6,7 +6,7 @@
 
 /**
  * Generic style used to define style for non-specialized components
- * @natura properties
+ * @natura1 properties
  * @typedef HtmlStyle
  * @prop {Color} backgroundColor Set the background color of an element
  * @prop {ImageUrl} backgroundImage  Set the background image of an element
@@ -332,11 +332,11 @@ export function CustomCssProperty(key,value){
  }
 
  /**
-	* @natura expression
-	* @param {String} key 
-	* @param {String} value 
-	* @returns {StyleEntryObject}
+	* @natura expression <<key>> <<value>>
+	* @param {String} key (placeholder: css attribute)
+	* @param {String} value (placeholder:css value)
+	* @returns {HtmlStyle}
 	*/
- export function styleEntry(key,value){
+ export function HtmlStyle(key,value){
 	 return {key,value}
  }
